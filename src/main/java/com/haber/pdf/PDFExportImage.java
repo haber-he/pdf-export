@@ -100,17 +100,11 @@ public class PDFExportImage {
 
     /**
      *
+     * @Description:图片拼接 （注意：必须两张图片长宽一致哦）
      * @param pics
      * @param type   1 横向拼接， 2 纵向拼接
      * @param dst_pic
      * @return
-     */
-    /**
-     * @Description:图片拼接 （注意：必须两张图片长宽一致哦）
-     * @author:liuyc
-     * @time:2016年5月27日 下午5:52:24
-     * @param files 要拼接的文件列表
-     * @param type 1  横向拼接， 2 纵向拼接
      */
     public static void mergeImage(String[] files, int type, String targetFile) {
         int len = files.length;
@@ -177,8 +171,8 @@ public class PDFExportImage {
     }
 
     public static void main(String[] args) throws IOException {
-        String outDirPath = "/Users/haber/Documents/church/礼仪周刊/乙年-2018/常年期第三主日";
-        String filePath = outDirPath + "/20180121常年期第三主日周刊曲线版.pdf";
+        String outDirPath = "/Users/haber/Documents/church/礼仪周刊/乙年-2018/常年期第十五主日";
+        String filePath = outDirPath + "/20180715常年期第十五主日周刊曲线版.pdf";
 
 
 //        String filePath = "/Users/haber/Documents/church/礼仪周刊/乙年-2018/圣家节/";
