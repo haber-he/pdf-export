@@ -1,5 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea/*
-.idea/codeStyleSettings.xml
-/target/*
-.idea/codeStyleSettings.xml
+.idea/
+target/
+.DS_Store
