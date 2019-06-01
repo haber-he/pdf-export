@@ -50,7 +50,7 @@ public class PDFExportImage {
         for (int pageIndex = 0; pageIndex < pageTotal; pageIndex++) {
             System.out.println("正在转换第 " + pageIndex + " 页");
 
-            BufferedImage image = renderer.renderImageWithDPI(pageIndex, 400, ImageType.RGB);
+            BufferedImage image = renderer.renderImageWithDPI(pageIndex, 700, ImageType.RGB);
 
             if (!isCut && pageIndex != (pageTotal - 1) && !excludePage.contains(pageIndex)) {
                 String fileName1 = outDir + "/" + file.getName() + "-" + (pageName++) + ".jpg";
@@ -101,9 +101,7 @@ public class PDFExportImage {
     /**
      *
      * @Description:图片拼接 （注意：必须两张图片长宽一致哦）
-     * @param pics
      * @param type   1 横向拼接， 2 纵向拼接
-     * @param dst_pic
      * @return
      */
     public static void mergeImage(String[] files, int type, String targetFile) {
@@ -171,8 +169,8 @@ public class PDFExportImage {
     }
 
     public static void main(String[] args) throws IOException {
-        String outDirPath = "/Users/haber/Documents/church/礼仪周刊/乙年-2018/常年期第十五主日";
-        String filePath = outDirPath + "/20180715常年期第十五主日周刊曲线版.pdf";
+        String outDirPath = "/Users/haber/Documents/church/礼仪周刊/丙年-2019/复活期第六主日";
+        String filePath = outDirPath + "/20190526复活期第六主日周刊曲线版.pdf";
 
 
 //        String filePath = "/Users/haber/Documents/church/礼仪周刊/乙年-2018/圣家节/";
